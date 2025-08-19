@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7f8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-action-buttons input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-action-buttons input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Student list table styling */
+#studentlist {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#studentlist th,
+#studentlist td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#studentlist th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+}
+
+#studentlist tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    table {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    form {
+        padding-right: 0;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}
